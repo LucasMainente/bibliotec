@@ -5,14 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bibliotec - A sua biblioteca digital</title>
-    <link rel="stylesheet" href="bibliotec/css/home.css">
+    <link rel="stylesheet" href="css/home.css">
     
+    <style >
+    body{
+        background-size: 100%;
+        background-image: url(images/login-bk-desktop.png);
+    }
+    </style>
+
+
 </head>
 
 <body>
+  
     <header>
+        <div class="background">
         <div class="Layout-grid header-flex">
-            <img src="bibliotec/images/logo-desktop.svg" alt="Um livro aberto com o texto bibliotec ao lado">
+            <img src="images/logo-desktop.svg" alt="Um livro aberto com o texto bibliotec ao lado">
             <nav>
                 <a href="#">Quem Somos</a>
                 <a href="#">Nosso Acervo</a>
@@ -23,17 +33,19 @@
 
     <div class="login-container">
         <div class="login-form">
-            <h2>Entrar na Biblioteca</h2>
+            <h2>Entre na Bibliotec</h2>
             <form action="#" method="post">
-                <label for="username">Email</label>
+                <label for="Email">Email</label>
                 <input type="text" id="username" name="username" required>
                 
                 <label for="password">Senha</label>
                 <input type="password" id="password" name="password" required>
+                <a class="link-esqueci-senha" href="">Esqueci a senha</a>  
                 
                 <button type="submit">Entrar</button>
             </form>
         </div>
     </div>
+</div>
 </body>
 </html>
