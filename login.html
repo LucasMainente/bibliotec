@@ -1,51 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bibliotec - A sua biblioteca digital</title>
-    <link rel="stylesheet" href="css/home.css">
-    
-    <style >
-    body{
-        background-size: 100%;
-        background-image: url(images/login-bk-desktop.png);
-    }
-    </style>
+    <title>Login - A sua biblioteca digital</title>
+    <link rel="stylesheet" href="login.css">
 
+    <style>
+        body {
+            background-image: url("images/login-bk-desktop.png");
+            background-size: 100%;
+        }
+    </style>
 
 </head>
 
 <body>
-  
     <header>
-        <div class="background">
         <div class="Layout-grid header-flex">
-            <img src="images/logo-desktop.svg" alt="Um livro aberto com o texto bibliotec ao lado">
+            <img src="./images/logo-desktop.svg" alt="Um livro aberto com o texto bibliotec ao lado">
             <nav>
+                <a href="index.html">
+                    <img src="./images/Return.svg">
+                </a>
                 <a href="#">Quem Somos</a>
                 <a href="#">Nosso Acervo</a>
-                <a href="#">Login</a>
+                <a href="login.html">Login</a>
             </nav>
         </div>
     </header>
 
-    <div class="login-container">
-        <div class="login-form">
-            <h2>Entre na Bibliotec</h2>
-            <form action="#" method="post">
-                <label for="Email">Email</label>
-                <input type="text" id="username" name="username" required>
-                
-                <label for="password">Senha</label>
-                <input type="password" id="password" name="password" required>
-                <a class="link-esqueci-senha" href="">Esqueci a senha</a>  
-                
-                <button type="submit">Entrar</button>
-            </form>
-        </div>
-    </div>
-</div>
+    <main class="login-flex Layout-grid">
+        <form class="login">
+            <h1>Entre na Biblio Tec</h1>
+
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Insira Seu Email" id="email">
+            </div>
+
+            <div class="senha">
+                <label for="senha">Senha</label>
+                <input type="password" placeholder="Insira Sua Senha" id="senha">
+                <a href="">Esqueceu sua Senha?</a>
+            </div>
+
+            <div>
+                <button>
+                    <p href="index.html">Entrar</p>
+                </button>
+            </div>
+        </form>
+    </main>
 </body>
+
 </html>
+
+
+
+
